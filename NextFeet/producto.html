@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Producto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detalle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: var(--blanco);
+            padding: 30px;
+            border-radius: var(--radio);
+            box-shadow: var(--sombra);
+        }
+        .detalle img {
+            width: 100%;
+            border-radius: var(--radio);
+        }
+        .info-producto h1 {
+            margin-bottom: 15px;
+            color: var(--azul);
+        }
+        .precio {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--rojo);
+            margin: 15px 0;
+        }
+        .opciones {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        .opciones button {
+            background: var(--blanco);
+            border: 2px solid var(--gris-borde);
+            color: var(--gris-texto);
+            padding: 8px 18px;
+            font-weight: 500;
+        }
+        .opciones button:hover,
+        .opciones button.activo {
+            border-color: var(--azul);
+            background: var(--azul-claro);
+            color: var(--azul);
+        }
+        @media (max-width: 768px) {
+            .detalle { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barra">
+        <h1>Next<span>Feet</span></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" class="activo">Catálogo</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html">🛒 Carrito</a>
+            <a href="login.html">Mi Cuenta</a>
+        </nav>
+    </div>
+
+    <div class="contenedor">
+        <div class="detalle">
+            <img src="img/zapatilla1.jpg" alt="Nike Air Max">
+            <div class="info-producto">
+                <h1>Nike Air Max</h1>
+                <p>Zapatilla deportiva de alto rendimiento con amortiguación Air Max, ideal para running y uso diario.</p>
+                <p class="precio">S/ 350.00</p>
+
+                <h4>Selecciona talla:</h4>
+                <div class="opciones">
+                    <button>38</button>
+                    <button>39</button>
+                    <button class="activo">40</button>
+                    <button>41</button>
+                    <button>42</button>
+                </div>
+
+                <h4>Selecciona color:</h4>
+                <div class="opciones">
+                    <button class="activo">Negro</button>
+                    <button>Blanco</button>
+                    <button>Rojo</button>
+                </div>
+
+                <p class="mt-2"><strong>Stock disponible:</strong> 15 unidades</p>
+
+                <a href="carrito.html" class="btn-principal btn-bloque mt-2">🛒 Agregar al carrito</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 NextFeet - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

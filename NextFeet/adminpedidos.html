@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="menu-lateral">
+            <h2>Next<span>Feet</span></h2>
+            <nav>
+                <a href="admindashboard.html">📊 Dashboard</a>
+                <a href="adminproductos.html">📦 Productos</a>
+                <a href="admincategorias.html">🏷️ Categorías</a>
+                <a href="adminpedidos.html" class="activo">🛒 Pedidos</a>
+                <a href="adminclientes.html">👥 Clientes</a>
+                <a href="adminreembolsos.html">💸 Reembolsos</a>
+                <a href="login.html">🚪 Cerrar sesión</a>
+            </nav>
+        </aside>
+
+        <main class="contenido-admin">
+            <h1 class="mb-3">Pedidos</h1>
+
+            <div class="filtros mb-2">
+                <input type="text" placeholder="🔍 Buscar pedido...">
+                <select>
+                    <option>Todos los estados</option>
+                    <option>Pendiente</option>
+                    <option>Enviado</option>
+                    <option>Entregado</option>
+                </select>
+            </div>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Cliente</th>
+                        <th>Fecha</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NF-2025-0001</td>
+                        <td>Alex Parco</td>
+                        <td>10/06/2025</td>
+                        <td>S/ 910.00</td>
+                        <td><span class="badge badge-pendiente">Pendiente</span></td>
+                        <td><a href="adminpedidodetalle.html" class="btn-principal btn-sm">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>NF-2025-0002</td>
+                        <td>María López</td>
+                        <td>09/06/2025</td>
+                        <td>S/ 280.00</td>
+                        <td><span class="badge badge-enviado">Enviado</span></td>
+                        <td><a href="adminpedidodetalle.html" class="btn-principal btn-sm">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td>NF-2025-0003</td>
+                        <td>Juan Pérez</td>
+                        <td>08/06/2025</td>
+                        <td>S/ 420.00</td>
+                        <td><span class="badge badge-entregado">Entregado</span></td>
+                        <td><a href="adminpedidodetalle.html" class="btn-principal btn-sm">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>

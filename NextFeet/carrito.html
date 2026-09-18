@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Carrito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barra">
+        <h1>Next<span>Feet</span></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html" class="activo">🛒 Carrito</a>
+            <a href="perfil.html">Mi Perfil</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </nav>
+    </div>
+
+    <div class="contenedor">
+        <h2 class="mb-3">🛒 Mi Carrito</h2>
+
+        <table class="tabla mb-3">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Talla</th>
+                    <th>Color</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nike Air Max</td>
+                    <td>40</td>
+                    <td>Negro</td>
+                    <td>S/ 350.00</td>
+                    <td><input type="number" value="1" min="1" style="width: 60px; padding: 5px;"></td>
+                    <td>S/ 350.00</td>
+                    <td><button class="btn-rojo btn-sm">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Adidas Runner</td>
+                    <td>42</td>
+                    <td>Blanco</td>
+                    <td>S/ 280.00</td>
+                    <td><input type="number" value="2" min="1" style="width: 60px; padding: 5px;"></td>
+                    <td>S/ 560.00</td>
+                    <td><button class="btn-rojo btn-sm">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card text-center">
+            <h3>Total: <span style="color: var(--rojo);">S/ 910.00</span></h3>
+            <div class="mt-2">
+                <a href="catalogo.html" class="btn-secundario">Seguir comprando</a>
+                <a href="envio.html" class="btn-principal">Continuar con el envío</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 NextFeet - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

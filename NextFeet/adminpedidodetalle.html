@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Detalle Pedido Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="menu-lateral">
+            <h2>Next<span>Feet</span></h2>
+            <nav>
+                <a href="admindashboard.html">📊 Dashboard</a>
+                <a href="adminproductos.html">📦 Productos</a>
+                <a href="admincategorias.html">🏷️ Categorías</a>
+                <a href="adminpedidos.html" class="activo">🛒 Pedidos</a>
+                <a href="adminclientes.html">👥 Clientes</a>
+                <a href="adminreembolsos.html">💸 Reembolsos</a>
+                <a href="login.html">🚪 Cerrar sesión</a>
+            </nav>
+        </aside>
+
+        <main class="contenido-admin">
+            <h1 class="mb-3">Pedido NF-2025-0001</h1>
+
+            <div class="card mb-3">
+                <h3>Datos del cliente</h3>
+                <p class="mt-1"><strong>Nombre:</strong> Alex Parco</p>
+                <p><strong>Documento:</strong> 73978755</p>
+                <p><strong>Correo:</strong> alex@gmail.com</p>
+                <p><strong>Teléfono:</strong> 987654321</p>
+            </div>
+
+            <div class="card mb-3">
+                <h3>Datos de envío</h3>
+                <p class="mt-1"><strong>Dirección:</strong> Av. Los Álamos 456 - SJL</p>
+                <p><strong>Empresa:</strong> Olva Courier</p>
+                <p><strong>Fecha estimada:</strong> 15/06/2025</p>
+            </div>
+
+            <div class="card mb-3">
+                <h3>Productos</h3>
+                <table class="tabla mt-2">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Talla</th>
+                            <th>Color</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nike Air Max</td>
+                            <td>40</td>
+                            <td>Negro</td>
+                            <td>1</td>
+                            <td>S/ 350.00</td>
+                        </tr>
+                        <tr>
+                            <td>Adidas Runner</td>
+                            <td>42</td>
+                            <td>Blanco</td>
+                            <td>2</td>
+                            <td>S/ 560.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="mt-2 text-center" style="font-size: 20px;"><strong>Total: S/ 910.00</strong></p>
+            </div>
+
+            <div class="card">
+                <h3>Actualizar estado</h3>
+                <div class="campo mt-2">
+                    <select>
+                        <option>Pendiente</option>
+                        <option>Enviado</option>
+                        <option>Entregado</option>
+                    </select>
+                </div>
+                <button class="btn-principal">Guardar cambios</button>
+                <a href="adminpedidos.html" class="btn-secundario">Volver</a>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Datos de Envío</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barra">
+        <h1>Next<span>Feet</span></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">🛒 Carrito</a>
+            <a href="perfil.html">Mi Perfil</a>
+        </nav>
+    </div>
+
+    <div class="contenedor-centrado">
+        <form class="formulario">
+            <h2>Datos de Envío</h2>
+            <div class="campo">
+                <label>Dirección</label>
+                <input type="text" placeholder="Av. Los Álamos 456" required>
+            </div>
+            <div class="campo">
+                <label>Distrito</label>
+                <input type="text" placeholder="San Juan de Lurigancho" required>
+            </div>
+            <div class="campo">
+                <label>Ciudad</label>
+                <input type="text" placeholder="Lima" required>
+            </div>
+            <div class="campo">
+                <label>Referencia</label>
+                <input type="text" placeholder="Frente al parque">
+            </div>
+            <div class="campo">
+                <label>Teléfono</label>
+                <input type="tel" placeholder="987654321" required>
+            </div>
+            <div class="campo">
+                <label>Empresa de envío</label>
+                <select required>
+                    <option value="">Selecciona una empresa</option>
+                    <option>Olva Courier</option>
+                    <option>Shalom</option>
+                    <option>DHL</option>
+                    <option>Urbano</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-principal btn-bloque">Confirmar pedido</button>
+        </form>
+    </div>
+
+</body>
+</html>

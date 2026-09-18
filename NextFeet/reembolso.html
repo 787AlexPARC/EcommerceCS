@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Solicitar Reembolso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barra">
+        <h1>Next<span>Feet</span></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="mispedidos.html">Mis Pedidos</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </nav>
+    </div>
+
+    <div class="contenedor-centrado">
+        <form class="formulario">
+            <h2>Solicitar Reembolso</h2>
+            <p class="text-center mb-2">Pedido: <strong>NF-2025-0001</strong></p>
+
+            <div class="campo">
+                <label>Motivo del reembolso</label>
+                <select required>
+                    <option value="">Selecciona un motivo</option>
+                    <option>Producto defectuoso</option>
+                    <option>Producto incorrecto</option>
+                    <option>Talla incorrecta</option>
+                    <option>No recibí el producto</option>
+                    <option>Otro</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label>Descripción</label>
+                <textarea placeholder="Describe el motivo de tu solicitud..." rows="4" required></textarea>
+            </div>
+            <div class="campo">
+                <label>Monto solicitado</label>
+                <input type="text" value="S/ 910.00" readonly>
+            </div>
+            <button type="submit" class="btn-rojo btn-bloque">Enviar solicitud</button>
+            <p class="text-center mt-2"><a href="detallepedido.html">Volver al detalle</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="menu-lateral">
+            <h2>Next<span>Feet</span></h2>
+            <nav>
+                <a href="admindashboard.html">📊 Dashboard</a>
+                <a href="adminproductos.html" class="activo">📦 Productos</a>
+                <a href="admincategorias.html">🏷️ Categorías</a>
+                <a href="adminpedidos.html">🛒 Pedidos</a>
+                <a href="adminclientes.html">👥 Clientes</a>
+                <a href="adminreembolsos.html">💸 Reembolsos</a>
+                <a href="loginhtml">🚪 Cerrar sesión</a>
+            </nav>
+        </aside>
+
+        <main class="contenido-admin">
+            <div class="flex-between mb-3">
+                <h1>Productos</h1>
+                <a href="adminproductoform.html" class="btn-principal">+ Nuevo producto</a>
+            </div>
+
+            <div class="filtros mb-2">
+                <input type="text" placeholder="🔍 Buscar producto...">
+                <select>
+                    <option>Todas las categorías</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                </select>
+            </div>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/zapatilla1.jpg" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;"></td>
+                        <td>Nike Air Max</td>
+                        <td>Hombre</td>
+                        <td>S/ 350.00</td>
+                        <td>15</td>
+                        <td>
+                            <a href="adminproductoform.html" class="btn-principal btn-sm">Editar</a>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/zapatilla2.jpg" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;"></td>
+                        <td>Adidas Runner</td>
+                        <td>Mujer</td>
+                        <td>S/ 280.00</td>
+                        <td>22</td>
+                        <td>
+                            <a href="adminproductoform.html" class="btn-principal btn-sm">Editar</a>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/zapatilla3.jpg" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;"></td>
+                        <td>Puma Sport</td>
+                        <td>Deportivo</td>
+                        <td>S/ 320.00</td>
+                        <td>3</td>
+                        <td>
+                            <a href="adminproductoform.html" class="btn-principal btn-sm">Editar</a>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>

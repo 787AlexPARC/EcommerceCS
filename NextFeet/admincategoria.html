@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Categorías</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="menu-lateral">
+            <h2>Next<span>Feet</span></h2>
+            <nav>
+                <a href="admindashboard.html">📊 Dashboard</a>
+                <a href="adminproductos.html">📦 Productos</a>
+                <a href="admincategorias.html" class="activo">🏷️ Categorías</a>
+                <a href="adminpedidos.html">🛒 Pedidos</a>
+                <a href="adminclientes.html">👥 Clientes</a>
+                <a href="adminreembolsos.html">💸 Reembolsos</a>
+                <a href="login.html">🚪 Cerrar sesión</a>
+            </nav>
+        </aside>
+
+        <main class="contenido-admin">
+            <div class="flex-between mb-3">
+                <h1>Categorías</h1>
+                <button class="btn-principal">+ Nueva categoría</button>
+            </div>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hombre</td>
+                        <td>Zapatillas para hombre</td>
+                        <td>
+                            <button class="btn-principal btn-sm">Editar</button>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mujer</td>
+                        <td>Zapatillas para mujer</td>
+                        <td>
+                            <button class="btn-principal btn-sm">Editar</button>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Deportivo</td>
+                        <td>Zapatillas deportivas</td>
+                        <td>
+                            <button class="btn-principal btn-sm">Editar</button>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Casual</td>
+                        <td>Zapatillas casuales</td>
+                        <td>
+                            <button class="btn-principal btn-sm">Editar</button>
+                            <button class="btn-rojo btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>

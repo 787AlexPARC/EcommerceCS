@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="menu-lateral">
+            <h2>Next<span>Feet</span></h2>
+            <nav>
+                <a href="admindashboard.html">📊 Dashboard</a>
+                <a href="adminproductos.html">📦 Productos</a>
+                <a href="admincategorias.html">🏷️ Categorías</a>
+                <a href="adminpedidos.html">🛒 Pedidos</a>
+                <a href="adminclientes.html" class="activo">👥 Clientes</a>
+                <a href="adminreembolsos.html">💸 Reembolsos</a>
+                <a href="login.html">🚪 Cerrar sesión</a>
+            </nav>
+        </aside>
+
+        <main class="contenido-admin">
+            <h1 class="mb-3">Clientes</h1>
+
+            <div class="filtros mb-2">
+                <input type="text" placeholder="🔍 Buscar cliente...">
+            </div>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Documento</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alex Parco</td>
+                        <td>73978755</td>
+                        <td>alex@gmail.com</td>
+                        <td>987654321</td>
+                        <td><button class="btn-principal btn-sm">Ver compras</button></td>
+                    </tr>
+                    <tr>
+                        <td>María López</td>
+                        <td>45871236</td>
+                        <td>maria@gmail.com</td>
+                        <td>912345678</td>
+                        <td><button class="btn-principal btn-sm">Ver compras</button></td>
+                    </tr>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>12345678</td>
+                        <td>juan@gmail.com</td>
+                        <td>998877665</td>
+                        <td><button class="btn-principal btn-sm">Ver compras</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Formulario Producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="admin-layout">
+        <aside class="menu-lateral">
+            <h2>Next<span>Feet</span></h2>
+            <nav>
+                <a href="admindashboard.html">📊 Dashboard</a>
+                <a href="adminproductos.html" class="activo">📦 Productos</a>
+                <a href="admincategorias.html">🏷️ Categorías</a>
+                <a href="adminpedidos.html">🛒 Pedidos</a>
+                <a href="adminclientes.html">👥 Clientes</a>
+                <a href="adminreembolsos.html">💸 Reembolsos</a>
+                <a href="login.html">🚪 Cerrar sesión</a>
+            </nav>
+        </aside>
+
+        <main class="contenido-admin">
+            <h1 class="mb-3">Nuevo Producto</h1>
+
+            <form class="formulario" style="max-width: 700px; margin: 0;">
+                <div class="campo">
+                    <label>Nombre del producto</label>
+                    <input type="text" placeholder="Nike Air Max" required>
+                </div>
+                <div class="campo">
+                    <label>Marca</label>
+                    <input type="text" placeholder="Nike" required>
+                </div>
+                <div class="campo">
+                    <label>Categoría</label>
+                    <select required>
+                        <option value="">Selecciona una categoría</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>Niños</option>
+                        <option>Deportivo</option>
+                        <option>Casual</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Tallas disponibles (separadas por coma)</label>
+                    <input type="text" placeholder="38, 39, 40, 41, 42">
+                </div>
+                <div class="campo">
+                    <label>Colores disponibles (separados por coma)</label>
+                    <input type="text" placeholder="Negro, Blanco, Rojo">
+                </div>
+                <div class="campo">
+                    <label>Precio</label>
+                    <input type="number" placeholder="350.00" step="0.01" required>
+                </div>
+                <div class="campo">
+                    <label>Stock</label>
+                    <input type="number" placeholder="15" required>
+                </div>
+                <div class="campo">
+                    <label>Imagen del producto</label>
+                    <input type="file">
+                </div>
+                <div class="campo">
+                    <label>Descripción</label>
+                    <textarea placeholder="Descripción del producto..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-principal btn-bloque">Guardar producto</button>
+                <p class="text-center mt-2"><a href="adminproductos.html">Volver a la lista</a></p>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

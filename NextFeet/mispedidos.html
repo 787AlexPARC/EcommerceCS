@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFeet - Mis Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barra">
+        <h1>Next<span>Feet</span></h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="perfil.html">Mi Perfil</a>
+            <a href="mispedidos.html" class="activo">Mis Pedidos</a>
+            <a href="carrito.html">🛒 Carrito</a>
+            <a href="login.html">Cerrar Sesión</a>
+        </nav>
+    </div>
+
+    <div class="contenedor">
+        <h2 class="mb-3">Mis Pedidos</h2>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Fecha</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NF-2025-0001</td>
+                    <td>10/06/2025</td>
+                    <td>S/ 910.00</td>
+                    <td><span class="badge badge-pendiente">Pendiente</span></td>
+                    <td><a href="detallepedido.html" class="btn-principal btn-sm">Ver detalle</a></td>
+                </tr>
+                <tr>
+                    <td>NF-2025-0002</td>
+                    <td>05/06/2025</td>
+                    <td>S/ 280.00</td>
+                    <td><span class="badge badge-enviado">Enviado</span></td>
+                    <td><a href="detallepedido.html" class="btn-principal btn-sm">Ver detalle</a></td>
+                </tr>
+                <tr>
+                    <td>NF-2025-0003</td>
+                    <td>28/05/2025</td>
+                    <td>S/ 420.00</td>
+                    <td><span class="badge badge-entregado">Entregado</span></td>
+                    <td><a href="detallepedido.html" class="btn-principal btn-sm">Ver detalle</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 NextFeet - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
