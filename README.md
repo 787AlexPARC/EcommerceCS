@@ -7,3 +7,6 @@ admin123
 Cliente
 cliente@nextfeet.com
 123456
+
+son usuarios de prueba
+
